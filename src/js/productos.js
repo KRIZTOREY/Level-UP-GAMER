@@ -1,5 +1,9 @@
+const BASE = window.location.hostname.includes("github.io")
+    ? "/Level-UP-GAMER"
+    : "";
+
+const IMAGEN_PRODUCTO_DEFECTO = `${BASE}/src/assets/favicon/favicon.png`;
 const PRODUCTOS_STORAGE_KEY = "catalogoProductos";
-const IMAGEN_PRODUCTO_DEFECTO = "/src/assets/favicon/favicon.png";
 
 const productosIniciales = [
     {
@@ -10,9 +14,9 @@ const productosIniciales = [
         descripcion: "Estrategia, comercio y construcción en un clásico de mesa para la comunidad gamer.",
         stock: 12,
         imagenes: [
-            "/src/assets/productos/Catan/catan.webp",
-            "/src/assets/productos/Catan/catan_2.webp",
-            "/src/assets/productos/Catan/catan_3.webp"
+            `${BASE}/src/assets/productos/Catan/catan.webp`,
+            `${BASE}/src/assets/productos/Catan/catan_2.webp`,
+            `${BASE}/src/assets/productos/Catan/catan_3.webp`
         ]
     },
     {
@@ -56,8 +60,8 @@ const productosIniciales = [
         descripcion: "La consola de nueva generación con gráficos 4K, SSD rápido y catálogo exclusivo.",
         stock: 5,
         imagenes: [
-            "/src/assets/productos/PS5/PS5.jpg",
-            "/src/assets/productos/PS5/PS5_2.jpg"
+            `${BASE}/src/assets/productos/PS5/PS5.jpg`,
+            `${BASE}/src/assets/productos/PS5/PS5_2.jpg`
         ]
     },
     {
@@ -90,9 +94,9 @@ const productosIniciales = [
         descripcion: "Mouse gamer ergonómico con sensor HERO 25K y botones programables.",
         stock: 18,
         imagenes: [
-            "/src/assets/productos/Logitech G502 HERO/Logitech_G502_HERO.webp",
-            "/src/assets/productos/Logitech G502 HERO/Logitech_G502_HERO_2.webp",
-            "/src/assets/productos/Logitech G502 HERO/Logitech_G502_HERO_3.webp"
+            `${BASE}/src/assets/productos/Logitech G502 HERO/Logitech_G502_HERO.webp`,
+            `${BASE}/src/assets/productos/Logitech G502 HERO/Logitech_G502_HERO_2.webp`,
+            `${BASE}/src/assets/productos/Logitech G502 HERO/Logitech_G502_HERO_3.webp`
         ]
     },
     {
@@ -103,10 +107,10 @@ const productosIniciales = [
         descripcion: "Teclado mecánico RGB con switches táctiles y respuesta rápida para gaming.",
         stock: 10,
         imagenes: [
-            "/src/assets/productos/Razer BlackWidow/Razer_BlackWidow.jpg",
-            "/src/assets/productos/Razer BlackWidow/Razer_BlackWidow_2.jpg",
-            "/src/assets/productos/Razer BlackWidow/Razer_BlackWidow_3.jpg",
-            "/src/assets/productos/Razer BlackWidow/Razer_BlackWidow_4.jpg"
+            `${BASE}/src/assets/productos/Razer BlackWidow/Razer_BlackWidow.jpg`,
+            `${BASE}/src/assets/productos/Razer BlackWidow/Razer_BlackWidow_2.jpg`,
+            `${BASE}/src/assets/productos/Razer BlackWidow/Razer_BlackWidow_3.jpg`,
+            `${BASE}/src/assets/productos/Razer BlackWidow/Razer_BlackWidow_4.jpg`
         ]
     },
     {
@@ -161,9 +165,9 @@ const productosIniciales = [
         descripcion: "Almacenamiento rápido para rendimiento superior y tiempos de carga reducidos.",
         stock: 25,
         imagenes: [
-            "/src/assets/productos/SSD 1TB NVMe/SSD_1TB_NVMe.png",
-            "/src/assets/productos/SSD 1TB NVMe/SSD_1TB_NVMe_2.png",
-            "/src/assets/productos/SSD 1TB NVMe/SSD_1TB_NVMe_3.png"
+            `${BASE}/src/assets/productos/SSD 1TB NVMe/SSD_1TB_NVMe.png`,
+            `${BASE}/src/assets/productos/SSD 1TB NVMe/SSD_1TB_NVMe_2.png`,
+            `${BASE}/src/assets/productos/SSD 1TB NVMe/SSD_1TB_NVMe_3.png`
         ]
     }
 ];
