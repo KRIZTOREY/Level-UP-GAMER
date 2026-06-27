@@ -1,7 +1,5 @@
 let detalleProductoSeleccionado = null;
 
-const IMAGEN_PRODUCTO_DEFECTO = "/./assets/favicon/favicon.png";
-
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     const codigo = params.get("code");
