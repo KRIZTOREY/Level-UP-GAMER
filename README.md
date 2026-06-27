@@ -46,11 +46,11 @@ python -m http.server 8000
 ## Estructura del proyecto
 
 - `index.html` — Página principal
-- `src/assets/` — Imágenes, banners, favicons y productos
-- `src/components/` — Fragmentos HTML reutilizables
-- `src/css/` — Hojas de estilo globales, por componente y por página
-- `src/js/` — Lógica de cliente para productos, carrito, validaciones, perfil, noticias y eventos
-- `src/pages/` — Páginas internas como catálogo, carrito, pago, soporte, noticias y eventos
+- `./assets/` — Imágenes, banners, favicons y productos
+- `./components/` — Fragmentos HTML reutilizables
+- `./css/` — Hojas de estilo globales, por componente y por página
+- `./js/` — Lógica de cliente para productos, carrito, validaciones, perfil, noticias y eventos
+- `./pages/` — Páginas internas como catálogo, carrito, pago, soporte, noticias y eventos
 
 ## Cómo contribuir
 

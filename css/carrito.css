@@ -1,0 +1,141 @@
+.carrito-page h1 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: var(--blanco);
+}
+
+.carrito-grid {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.carrito-items {
+    display: grid;
+    gap: 18px;
+}
+
+.cart-item,
+.carrito-item {
+    background: #111;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 22px;
+    display: grid;
+    gap: 16px;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.item-info h3 {
+    margin-bottom: 8px;
+}
+
+.item-price,
+.item-total {
+    color: var(--verde);
+    font-weight: 700;
+}
+
+.item-qty {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.item-qty button {
+    width: 36px;
+    height: 36px;
+    background: #111;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.item-qty input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    background: #111;
+    color: var(--blanco);
+    padding: 10px;
+}
+
+.resumen-card {
+    background-color: #111;
+    border: 1px solid rgba(30,144,255,0.25);
+    border-radius: 14px;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+.resumen-card h3 {
+    margin: 0;
+    color: var(--gris);
+    letter-spacing: 0.08em;
+}
+
+.resumen-total {
+    font-size: 2rem;
+    color: var(--blanco);
+    margin: 0;
+}
+
+.coupon-box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+.coupon-box input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: #111;
+    color: var(--blanco);
+}
+
+.coupon-box button {
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: var(--gris);
+    color: var(--negro);
+    border: none;
+    cursor: pointer;
+}
+
+.discount-label {
+    font-size: 0.95rem;
+    color: var(--verde);
+}
+
+.empty-cart {
+    color: var(--gris);
+    padding: 24px;
+}
+
+#carrito {
+    overflow-x: auto;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 1.4rem;
+    color: var(--verde);
+}
+
+@media (max-width: 1080px) {
+    .carrito-grid {
+        grid-template-columns: 1fr;
+    }
+}
