@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="admin-page">
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <div>
+                <div class="admin-brand">
+                    <div class="logo-link"><img src="../assets/favicon/favicon.png" alt="" sizes="" srcset=""></div>
+                    <div>
+                        <strong>Level-Up Gamer</strong>
+                        <span>Administrador</span>
+                    </div>
+                </div>
+                <nav class="admin-menu">
+                    <ul>
+                        <li><a class="active" href="#resumenAdmin">Dashboard</a></li>
+                        <li><a href="#productosAdmin">Inventario</a></li>
+                        <li><a href="catalogo.html">Ver catálogo</a></li>
+                        <li><a href="../../index.html">Volver al inicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="admin-sidebar-footer">
+                <ul>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                </ul>
+                <button type="button" class="admin-profile-btn">Sesión admin activa</button>
+            </div>
+        </aside>
+
+        <main class="admin-content">
+            <header class="admin-topbar">
+                <div>
+                    <p class="eyebrow">Bienvenido de nuevo</p>
+                    <h1>Panel de Administración</h1>
+                </div>
+                <div class="admin-topbar-actions">
+                    <a class="icon-btn" aria-label="Ver tienda" href="../../index.html">⌂</a>
+                    <button type="button" class="btn small outline" id="adminLogoutBtn">Cerrar sesión</button>
+                </div>
+            </header>
+
+            <section class="admin-welcome-card admin-card">
+                <h2>Administración de catálogo</h2>
+                <p>Gestiona productos, stock y precios desde un tablero centralizado.</p>
+            </section>
+
+            <div class="admin-grid" id="resumenAdmin">
+                <section class="admin-card admin-panel">
+                    <h3>Resumen rápido</h3>
+                    <div class="admin-panel-grid">
+                        <div class="stat-card">
+                            <span>Productos</span>
+                            <strong id="adminTotalProductos">0</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>Stock total</span>
+                            <strong id="adminTotalStock">0</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>Categorías</span>
+                            <strong id="adminTotalCategorias">0</strong>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="admin-card admin-empty">
+                    <h3>Actividad reciente</h3>
+                    <ul class="admin-activity-list" id="adminActividad"></ul>
+                </section>
+            </div>
+
+            <section class="admin-card admin-edit-section" id="productosAdmin">
+                <div class="admin-edit-grid">
+                    <div class="admin-product-table-card">
+                        <div class="admin-table-header">
+                            <h3>Productos</h3>
+                            <button type="button" id="nuevoProductoAdminBtn" class="btn small">Nuevo producto</button>
+                        </div>
+                        <div id="listaProductosAdmin" class="admin-table-wrapper"></div>
+                    </div>
+
+                    <div class="admin-form-card">
+                        <h3>Agregar o editar producto</h3>
+                        <form id="formProductoAdmin">
+                            <input type="hidden" id="modoEdicionAdmin" value="crear">
+                            <label for="codigoProductoAdmin">Código</label>
+                            <input type="text" id="codigoProductoAdmin" placeholder="Ej: CO002" required>
+
+                            <label for="nombreProductoAdmin">Nombre</label>
+                            <input type="text" id="nombreProductoAdmin" placeholder="Producto" required>
+
+                            <label for="categoriaProductoAdmin">Categoría</label>
+                            <input type="text" id="categoriaProductoAdmin" placeholder="Consolas" required>
+
+                            <label for="precioProductoAdmin">Precio</label>
+                            <input type="number" id="precioProductoAdmin" min="0" step="1" required>
+
+                            <label for="stockProductoAdmin">Stock</label>
+                            <input type="number" id="stockProductoAdmin" min="0" step="1" required>
+
+                            <label for="descripcionProductoAdmin">Descripción</label>
+                            <textarea id="descripcionProductoAdmin" rows="4" required></textarea>
+
+                            <button type="submit" id="btnGuardarProductoAdmin">Guardar producto</button>
+                        </form>
+                        <div id="mensajeAdmin" class="admin-message" aria-live="polite"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/validaciones.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

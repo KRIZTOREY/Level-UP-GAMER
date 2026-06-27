@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVEL-UP GAMER</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div id="siteHeader"></div>
+
+    <main class="page-main">
+        <section id="hero" class="hero-home">
+            <div class="hero-content">
+                <p class="eyebrow">Tienda gamer online • Chile</p>
+                <h1>Sube de nivel en cada compra</h1>
+                <p>Descubre consolas, accesorios, hardware, juegos de mesa y beneficios exclusivos para la comunidad gamer de Level-Up Gamer.</p>
+                <div class="hero-actions">
+                    <a id="btnCatalogo" class="hero-cta hero-cta-primary" href="src/pages/catalogo.html">Explorar catálogo</a>
+                    <a class="hero-cta hero-cta-primary" href="src/pages/eventos.html">Ver eventos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="promociones" class="info-section">
+            <h2>Promociones destacadas</h2>
+            <div class="info-grid">
+                <article class="card-producto">
+                    <h3>20% descuento DUOC</h3>
+                    <p>Beneficio permanente para estudiantes que acrediten correo institucional.</p>
+                    <button type="button" class="btn small outline" onclick="compartirContenido({titulo:'20% descuento DUOC', texto:'Beneficio permanente para estudiantes con correo institucional en Level-Up Gamer.', url:'/index.html'})">Compartir</button>
+                </article>
+                <article class="card-producto">
+                    <h3>2x1 mousepads</h3>
+                    <p>Lleva dos mousepads y paga solo uno en productos seleccionados.</p>
+                    <button type="button" class="btn small outline" onclick="compartirContenido({titulo:'2x1 mousepads', texto:'Promoción especial 2x1 en mousepads seleccionados de Level-Up Gamer.', url:'/index.html'})">Compartir</button>
+                </article>
+                <article class="card-producto">
+                    <h3>Envío gratis</h3>
+                    <p>En compras superiores a $50.000 en todo Chile.</p>
+                    <button type="button" class="btn small outline" onclick="compartirContenido({titulo:'Envío gratis', texto:'Aprovecha envío gratis en compras superiores a $50.000 en Level-Up Gamer.', url:'/index.html'})">Compartir</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="destacados" class="info-section">
+            <h2>Productos destacados</h2>
+            <div class="productos productos-home">
+                <article class="card-producto">
+                    <img src="src/assets/productos/Catan/catan.webp" alt="Catan">
+                    <div class="card-body">
+                        <h3>Catan</h3>
+                        <p>Juego de estrategia clásico para partidas en familia o con amigos.</p>
+                        <p class="precio">$29.990</p>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="src/assets/productos/PS5/PS5.jpg" alt="PlayStation 5">
+                    <div class="card-body">
+                        <h3>PlayStation 5</h3>
+                        <p>Consola de nueva generación con catálogo exclusivo y tiempos de carga ultrarrápidos.</p>
+                        <p class="precio">$549.990</p>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="src/assets/productos/Logitech G502 HERO/Logitech_G502_HERO.webp" alt="Logitech G502 HERO">
+                    <div class="card-body">
+                        <h3>Logitech G502 HERO</h3>
+                        <p>Mouse con sensor de alta precisión y botones programables para un rendimiento superior.</p>
+                        <p class="precio">$49.990</p>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="src/assets/productos/Razer BlackWidow/Razer_BlackWidow.jpg" alt="Razer BlackWidow">
+                    <div class="card-body">
+                        <h3>Razer BlackWidow</h3>
+                        <p>Teclado mecánico RGB con respuesta rápida para gaming competitivo.</p>
+                        <p class="precio">$129.990</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="levelUp" class="info-section">
+            <h2>Sistema LevelUp</h2>
+            <p>Acumula puntos por cada compra y desbloquea recompensas, descuentos y beneficios exclusivos para la comunidad gamer.</p>
+            <div id="niveles">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nivel</th>
+                            <th>Puntos requeridos</th>
+                            <th>Beneficios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mortal del Gaming</td>
+                            <td>0 - 500</td>
+                            <td>Acceso básico</td>
+                        </tr>
+                        <tr>
+                            <td>Semi-Dios del Gaming</td>
+                            <td>500 - 5000</td>
+                            <td>20% descuento</td>
+                        </tr>
+                        <tr>
+                            <td>Dios del Gaming</td>
+                            <td>5000 - ∞</td>
+                            <td>Beneficios exclusivos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="referidos" class="info-section">
+            <h2>Programa de referidos</h2>
+            <p>Invita a tus amigos con tu código y obtén puntos adicionales que te acercan a recompensas Premium.</p>
+            <div class="codigo">LEVELUP2026</div>
+        </section>
+
+        <section id="comunidad" class="info-section">
+            <h2>Impacto comunitario</h2>
+            <p>Apoyamos torneos, eventos locales y comunidades gamer para construir una red más fuerte y activa.</p>
+            <ul>
+                <li>Patrocinio de torneos eSports</li>
+                <li>Apoyo a comunidades gaming</li>
+                <li>Colaboraciones con streamers</li>
+                <li>Actividades presenciales y online</li>
+            </ul>
+        </section>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <script src="src/js/components.js"></script>
+    <script src="src/js/login.js"></script>
+    <script src="src/js/validaciones.js"></script>
+</body>
+</html>
