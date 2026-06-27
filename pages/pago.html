@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="siteHeader"></div>
+    <main class="page-main">
+        <section class="info-section">
+            <h2>Proceso de pago</h2>
+            <p>Completa tus datos para finalizar la compra. Esta es una simulación de pago para clientes.</p>
+            <form id="formPago" class="payment-form">
+                <label for="nombreTitular">Nombre del titular</label>
+                <input type="text" id="nombreTitular" placeholder="Nombre completo" autocomplete="cc-name" required>
+
+                <label for="numeroTarjeta">Número de tarjeta</label>
+                <input type="text" id="numeroTarjeta" placeholder="XXXX XXXX XXXX XXXX" inputmode="numeric" autocomplete="cc-number" maxlength="23" required>
+
+                <label for="fechaExpiracion">Fecha de expiración</label>
+                <input type="text" id="fechaExpiracion" placeholder="MM/AA" inputmode="numeric" autocomplete="cc-exp" maxlength="5" required>
+
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" placeholder="123" inputmode="numeric" autocomplete="cc-csc" maxlength="4" required>
+
+                <button type="submit" class="btn">Pagar ahora</button>
+            </form>
+            <div id="mensajePago" class="error" aria-live="polite"></div>
+        </section>
+    </main>
+    <div id="siteFooter"></div>
+    <script src="../js/validaciones.js"></script>
+    <script src="../js/pago.js"></script>
+    <script src="../js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="siteHeader"></div>
+    <main class="page-main">
+        <section id="soporte" class="info-section">
+            <h2>Soporte Técnico</h2>
+            <div class="info-grid">
+                <article class="card-producto">
+                    <h3>Contacto rápido</h3>
+                    <p>Escríbenos a <a href="mailto:contacto@levelupgamer.cl">contacto@levelupgamer.cl</a> para soporte de pedidos y envíos.</p>
+                </article>
+                <article class="card-producto">
+                    <h3>Atención</h3>
+                    <p>Lunes a viernes de 09:00 a 18:00. Respuesta prioritaria para pedidos DUOC.</p>
+                </article>
+                <article class="card-producto">
+                    <h3>Chat por WhatsApp</h3>
+                    <p>Habla directamente con soporte técnico para consultas de pedidos, garantías y ayuda rápida.</p>
+                    <p><a class="btn small" id="whatsappSoporteBtn" href="https://wa.me/56900000000?text=Hola%2C%20necesito%20soporte%20t%C3%A9cnico%20en%20Level-Up%20Gamer" target="_blank" rel="noopener noreferrer">Abrir chat</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <div id="siteFooter"></div>
+    <script src="../js/components.js"></script>
+    <script>
+        const whatsappSoporteBtn = document.getElementById("whatsappSoporteBtn");
+        if (whatsappSoporteBtn) {
+            whatsappSoporteBtn.addEventListener("click", () => {
+                localStorage.setItem("ultimoCanalSoporte", "whatsapp");
+            });
+        }
+    </script>
+</body>
+</html>
