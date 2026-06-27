@@ -24,7 +24,7 @@ function resaltarNavActivo() {
 
     links.forEach(link => {
         const href = link.getAttribute("href").toLowerCase();
-        if (ruta.endsWith(href) || ruta.includes(href.replace("/./pages/", ""))) {
+        if (ruta.endsWith(href) || ruta.includes(href.replace("../pages/", ""))) {
             link.classList.add("active");
         } else {
             link.classList.remove("active");
@@ -64,7 +64,7 @@ function actualizarContadorCarrito() {
 
 function actualizarHeaderSegunRol() {
     const usuario = obtenerUsuarioActivo();
-    const adminLink = document.querySelector('.main-nav a[href="/./pages/admin.html"]');
+    const adminLink = document.querySelector('.main-nav a[href="/../pages/admin.html"]');
     const logoutBtn = document.getElementById('logoutBtn');
     const loginBtn = document.getElementById('loginLink');
     const registerBtn = document.getElementById('registerLink');

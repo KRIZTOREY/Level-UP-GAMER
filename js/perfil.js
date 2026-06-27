@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const usuario = JSON.parse(localStorage.getItem("usuarioActivo") || "null");
 
     if (!usuario) {
-        window.location.href = "/./pages/login.html?redirect=perfil.html";
+        window.location.href = "../pages/login.html?redirect=perfil.html";
         return;
     }
 
     if (usuario.rol === "admin") {
-        window.location.href = "/./pages/admin.html";
+        window.location.href = "../pages/admin.html";
         return;
     }
 
